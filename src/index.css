@@ -2,41 +2,63 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Focus Nest Essentials - Minimal Productivity Design System */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Pure backgrounds for minimal aesthetic */
+    --background: 0 0% 99%;
+    --foreground: 220 15% 25%;
 
+    /* Subtle card backgrounds */
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 220 15% 25%;
 
+    /* Minimal popovers */
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 220 15% 25%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Calming primary - soft blue-grey */
+    --primary: 210 25% 40%;
+    --primary-foreground: 0 0% 98%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Gentle secondary - very light blue */
+    --secondary: 210 30% 96%;
+    --secondary-foreground: 220 15% 25%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Subtle muted tones */
+    --muted: 220 15% 96%;
+    --muted-foreground: 220 10% 55%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Soft accent - gentle green */
+    --accent: 150 20% 92%;
+    --accent-foreground: 220 15% 25%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    /* Gentle destructive */
+    --destructive: 0 50% 65%;
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    /* Minimal borders */
+    --border: 220 15% 92%;
+    --input: 220 15% 95%;
+    --ring: 210 25% 40%;
 
-    --radius: 0.5rem;
+    /* Generous radius for modern feel */
+    --radius: 0.75rem;
+
+    /* Custom design tokens for focus and calm */
+    --focus-blue: 210 40% 85%;
+    --calm-green: 150 25% 88%;
+    --warm-neutral: 30 15% 94%;
+    --soft-shadow: 220 15% 25% / 0.08;
+    
+    /* Gradients for subtle depth */
+    --gradient-calm: linear-gradient(135deg, hsl(210 40% 98%), hsl(150 25% 96%));
+    --gradient-focus: linear-gradient(180deg, hsl(0 0% 100%), hsl(210 30% 98%));
+    
+    /* Transitions for smooth interactions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-gentle: all 0.2s ease-out;
 
     --sidebar-background: 0 0% 98%;
 
@@ -100,6 +122,27 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+
+  /* Custom utility classes for the design system */
+  .gradient-calm {
+    background: var(--gradient-calm);
+  }
+  
+  .gradient-focus {
+    background: var(--gradient-focus);
+  }
+  
+  .transition-smooth {
+    transition: var(--transition-smooth);
+  }
+  
+  .transition-gentle {
+    transition: var(--transition-gentle);
+  }
+  
+  .shadow-soft {
+    box-shadow: 0 4px 12px var(--soft-shadow);
   }
 }

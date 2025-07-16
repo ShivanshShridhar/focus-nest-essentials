@@ -52,6 +52,10 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				// Custom colors for focus and productivity theme
+				'focus-blue': 'hsl(var(--focus-blue))',
+				'calm-green': 'hsl(var(--calm-green))',
+				'warm-neutral': 'hsl(var(--warm-neutral))',
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
