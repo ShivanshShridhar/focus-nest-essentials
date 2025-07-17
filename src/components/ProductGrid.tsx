@@ -4,6 +4,12 @@ import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import ergonomicChair from "@/assets/ergonomic-chair.jpg";
 import ergonomicPeripherals from "@/assets/ergonomic-peripherals.jpg";
 import blueLightGlasses from "@/assets/blue-light-glasses.jpg";
+import standingDesk from "@/assets/standing-desk.jpg";
+import monitorStand from "@/assets/monitor-stand.jpg";
+import wirelessCharger from "@/assets/wireless-charger.jpg";
+import laptopStand from "@/assets/laptop-stand.jpg";
+import wristRest from "@/assets/wrist-rest.jpg";
+import deskOrganizer from "@/assets/desk-organizer.jpg";
 
 const ProductGrid = () => {
   const products = [
@@ -39,6 +45,72 @@ const ProductGrid = () => {
       image: blueLightGlasses,
       description: "Stylish blue light blocking glasses to reduce eye strain",
       benefits: ["Reduces eye fatigue", "Better sleep", "Modern design"],
+    },
+    {
+      id: 4,
+      name: "ElevateDesk Pro Standing Desk",
+      category: "Furniture",
+      price: "$599",
+      rating: 4.8,
+      reviews: 156,
+      image: standingDesk,
+      description: "Height-adjustable standing desk with spacious surface and memory presets",
+      benefits: ["Promotes better posture", "Reduces sitting fatigue", "Improves circulation"],
+    },
+    {
+      id: 5,
+      name: "VisionRise Monitor Stand",
+      category: "Accessories",
+      price: "$89",
+      rating: 4.6,
+      reviews: 134,
+      image: monitorStand,
+      description: "Bamboo monitor stand with storage compartments for desk organization",
+      benefits: ["Optimal screen height", "Reduces neck strain", "Extra storage space"],
+    },
+    {
+      id: 6,
+      name: "PowerFlow Wireless Charger",
+      category: "Tech",
+      price: "$45",
+      rating: 4.5,
+      reviews: 298,
+      image: wirelessCharger,
+      description: "Fast wireless charging stand with phone positioning for video calls",
+      benefits: ["Cable-free charging", "Video call ready", "Sleek design"],
+    },
+    {
+      id: 7,
+      name: "LiftBook Laptop Stand",
+      category: "Accessories",
+      price: "$119",
+      rating: 4.9,
+      reviews: 187,
+      image: laptopStand,
+      description: "Adjustable aluminum laptop stand for ergonomic viewing and cooling",
+      benefits: ["Better screen angle", "Improved airflow", "Portable design"],
+    },
+    {
+      id: 8,
+      name: "ComfortType Wrist Rest",
+      category: "Accessories",
+      price: "$29",
+      rating: 4.4,
+      reviews: 421,
+      image: wristRest,
+      description: "Memory foam wrist rest with soft fabric cover for typing comfort",
+      benefits: ["Reduces wrist strain", "Memory foam comfort", "Non-slip base"],
+    },
+    {
+      id: 9,
+      name: "ZenSpace Desk Organizer",
+      category: "Organization",
+      price: "$59",
+      rating: 4.7,
+      reviews: 163,
+      image: deskOrganizer,
+      description: "Multi-compartment wooden desk organizer for a clutter-free workspace",
+      benefits: ["Keeps desk tidy", "Natural wood finish", "Multiple compartments"],
     },
   ];
 
