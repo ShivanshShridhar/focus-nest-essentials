@@ -2,7 +2,13 @@ import { Star, ShoppingCart } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import ergonomicChair from "@/assets/ergonomic-chair.jpg";
+import ergonomicChairFront from "@/assets/ergonomic-chair-front.jpg";
+import ergonomicChairSide from "@/assets/ergonomic-chair-side.jpg";
+import ergonomicChairWhite from "@/assets/ergonomic-chair-white.jpg";
 import ergonomicPeripherals from "@/assets/ergonomic-peripherals.jpg";
+import peripheralsTopView from "@/assets/peripherals-top-view.jpg";
+import peripheralsDetail from "@/assets/peripherals-detail.jpg";
+import peripheralsLifestyle from "@/assets/peripherals-lifestyle.jpg";
 import blueLightGlasses from "@/assets/blue-light-glasses.jpg";
 import standingDesk from "@/assets/standing-desk.jpg";
 import monitorStand from "@/assets/monitor-stand.jpg";
@@ -111,6 +117,72 @@ const ProductGrid = () => {
       image: deskOrganizer,
       description: "Multi-compartment wooden desk organizer for a clutter-free workspace",
       benefits: ["Keeps desk tidy", "Natural wood finish", "Multiple compartments"],
+    },
+    {
+      id: 10,
+      name: "ErgoLux Pro Chair - Classic Black",
+      category: "Seating",
+      price: "$449",
+      rating: 4.9,
+      reviews: 127,
+      image: ergonomicChairFront,
+      description: "Premium ergonomic chair front view showcasing modern design and comfort",
+      benefits: ["Reduces back strain", "Improves posture", "All-day comfort"],
+    },
+    {
+      id: 11,
+      name: "ErgoLux Pro Chair - Side Profile",
+      category: "Seating",
+      price: "$449",
+      rating: 4.9,
+      reviews: 127,
+      image: ergonomicChairSide,
+      description: "Side view highlighting the curved lumbar support and ergonomic features",
+      benefits: ["Optimal spine alignment", "Adjustable components", "Professional design"],
+    },
+    {
+      id: 12,
+      name: "ErgoLux Pro Chair - White Edition",
+      category: "Seating",
+      price: "$469",
+      rating: 4.8,
+      reviews: 98,
+      image: ergonomicChairWhite,
+      description: "Clean white variant perfect for modern minimalist workspaces",
+      benefits: ["Modern aesthetic", "Easy to clean", "Timeless design"],
+    },
+    {
+      id: 13,
+      name: "Focus Flow - Top View",
+      category: "Peripherals",
+      price: "$129",
+      rating: 4.8,
+      reviews: 89,
+      image: peripheralsTopView,
+      description: "Top-down view showcasing the ergonomic keyboard layout and wireless mouse",
+      benefits: ["Split keyboard design", "Wireless convenience", "Ergonomic curves"],
+    },
+    {
+      id: 14,
+      name: "Focus Flow - Detail Shot",
+      category: "Peripherals",
+      price: "$129",
+      rating: 4.8,
+      reviews: 89,
+      image: peripheralsDetail,
+      description: "Close-up detail of premium keys and precision mouse design",
+      benefits: ["Tactile feedback", "Precision tracking", "Premium materials"],
+    },
+    {
+      id: 15,
+      name: "Focus Flow - In Action",
+      category: "Peripherals",
+      price: "$129",
+      rating: 4.8,
+      reviews: 89,
+      image: peripheralsLifestyle,
+      description: "Lifestyle shot showing natural hand positioning and comfortable use",
+      benefits: ["Natural wrist position", "Comfortable typing", "Reduced strain"],
     },
   ];
 
